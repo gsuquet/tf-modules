@@ -1,19 +1,26 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-	"name": "Base Template",
+	"name": "TF modules",
 
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:1.0.12-bookworm@sha256:eb54c7935538ce8a63092a53d61c95f8cebc19921de2df6bc65dc606d8e5bb1d",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
-		"ghcr.io/guiyomh/features/just:0.1.0": {},
 		"ghcr.io/devcontainers-contrib/features/actionlint:1": {
-			"version": "latest"
+			"version": "1.7.1"
 		},
 		"ghcr.io/guiyomh/features/just:0": {
-			"version": "latest"
+			"version": "1.29.1"
+		},
+		"ghcr.io/devcontainers/features/terraform:1": {
+			"installSentinel": true,
+			"installTFsec": true,
+			"installTerraformDocs": true,
+			"version": "1.8.5",
+			"tflint": "0.47.0",
+			"terragrunt": "0.59.5"
 		}
 	},
 
@@ -33,7 +40,8 @@
         "pkief.material-icon-theme",
         "mutantdino.resourcemonitor",
         "github.copilot",
-        "github.copilot-chat"
+        "github.copilot-chat",
+        "hashicorp.terraform"
       ]
     }
   }
