@@ -4,7 +4,7 @@
 	"name": "Base Template",
 
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:1.0.13-bookworm@sha256:80c71299090045b9779aa63e6eb03092d2f4e400292aceb39820ef80690c4612",
+	"image": "mcr.microsoft.com/devcontainers/base:1.0.14-bookworm@sha256:420553c7d78a00bb7dcd6daec43a5c1b138f0b1de85fa80bb17e4c26b560da5b",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
